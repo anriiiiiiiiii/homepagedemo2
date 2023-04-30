@@ -1,0 +1,262 @@
+
+/* -------------ヘッダー------------- */
+header{
+height: 100px;
+
+background-color: #00a6ff;
+
+}
+
+.header_button{
+    padding: 10px 10px;
+    display:inline-block;
+    
+    margin: 5px 2px 5px 2px ; 
+
+    color: #ffffff;
+    font-size: 20px;
+    font-family: HiraMinProN;
+    font-weight: bold;
+    vertical-align: middle;
+    text-decoration:none;
+
+    background-color: #00a6ff;
+    border:4px solid #00a6ff;
+    border-radius: 8px 8px 8px 8px;
+
+}
+.header_button:hover{
+    background-color: #62c8ff;
+    border:4px solid #00a6ff;
+    border-radius: 8px 8px 8px 8px;
+
+    cursor: pointer;
+
+}
+
+.header_menu{
+    padding:15px 1em 15px 1em ;
+    display:inline-block;
+    margin: 5px 2px 5px 2px ; 
+
+    color: #cfeeff;
+    font-size: 15px;
+    font-family: HiraMinProN;
+    font-weight: bold;
+    text-decoration:none;
+
+    background-color: transparent;
+    border-radius: 8px 8px 8px 8px;
+
+}
+.header_menu:hover{
+    background-color: #62c8ff;
+    border-radius: 8px 8px 8px 8px;
+
+    cursor: pointer;
+
+}
+
+.header_other{
+    float: right;
+    width: 200px;
+    height: 40px;  
+    margin: 10px 15px;
+    padding: 5px 15px 0px 0px;
+
+    font-size: 15px;
+    color: #cfeeff;
+
+    background-color: transparent;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.header_other_title:hover{
+    background-color: #62c8ff;
+    cursor: pointer;
+}
+.header_other_title {
+    font-weight: bold;
+    padding: 0.5em;
+
+    border-radius: 8px 8px 8px 8px;
+}
+
+
+
+
+/* -------------ボディー------------- */
+
+body{
+    padding: 0px 11%;
+    background-color: #ffffff;
+    margin:0px;
+
+    background-image:  radial-gradient(#00a6ff 2px, transparent 2px), radial-gradient(#00a6ff 2px, #ffffff 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    background-attachment: fixed;
+}
+
+.title_design{
+padding:20px 0;
+height: 300px;
+background-color: #00a6ff;
+background-image: linear-gradient(0deg, #ffffff 0%, #00a6ff 100%);
+cursor: default;
+
+}
+.titlelogo{
+    text-align:center;
+    font-size:100px;
+    color:#ffffff;
+
+  animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+ 
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.subtitle{
+    background-color: #00a6ff;
+
+    height: 50px;
+    padding: 0px 20px;
+    margin: 5px 200px 3px 0px;
+    font-size: 40px;
+    font-family: fantasy;
+    color:#ffffff;
+
+}
+
+h3{
+    color: #003e5f;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+    0px 1px 0 #FFF,  0-1px 0 #FFF,
+    -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+h2{
+    color: #003e5f;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+    0px 1px 0 #FFF,  0-1px 0 #FFF,
+    -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+
+
+.about_button{
+    width: 98%;
+    height: 40px;
+    text-align:center;
+    padding: 15px 0px 5px 0px;
+    display:inline-block;
+    margin: 5px 2px 5px 2px ; 
+
+    color: #003e5f;
+    font-size: 20px;
+    font-family: HiraMinProN;
+    font-weight: bold;
+    text-decoration:none;
+
+    background-color: #ffffff;
+    border:4px solid #003e5f;
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+.bout_button:hover{
+    background-color: rgb(255, 255, 255,0.6);
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.about_button:hover{
+    cursor: pointer;
+
+    color: #00a6ff;
+    border:4px solid #00a6ff;
+
+    filter: grayscale(50%);
+}
+
+.about_text{
+    font-size: 20px;
+}
+
+.news_contents{
+    margin: 5px 10px 0px 0px;
+	height: 200px;
+	overflow-y: scroll;
+
+    background-color: rgb(255, 255, 255,0.7);
+
+    border:4px solid #003e5f;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.news_contents:hover{
+    cursor: ns-resize;
+}
+
+.space{
+    height: 50px;
+}
+
+
+/* -------------フッター------------- */
+
+footer{
+    padding: 5px 0px;
+    height: 200px;
+    background-color: #00a6ff;
+
+    box-shadow: 
+    0px -10px 0px 0px #45beff,
+    0px -15px 0px 0px #b1e4ff;
+}
+
+
+
+.footer_button{
+    padding:10px 1em 10px 1em ;
+    display:inline-block;
+    margin: 5px 1.5px 5px 1.5px ; 
+
+    color: #ffffff;
+    font-size: 15px;
+    font-family: HiraMinProN;
+    font-weight: bold;
+    text-decoration: none;
+
+    background-color: #00a6ff;
+    border:3px solid #00a6ff;
+    border-radius: 10px 10px 10px 10px; 
+
+}
+
+.footer_button:hover{
+    cursor: pointer;
+    background-color: #62c8ff;
+}
+
+.footer_text{
+    padding: 0px 10px;
+    color: #83d4ff;
+    font-size: 30px;
+
+}
+

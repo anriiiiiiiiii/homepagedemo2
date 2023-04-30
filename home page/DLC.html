@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<!-------------- ヘッド---------------->
+
+<head>
+<link rel="stylesheet" href="DLC.css">
+<title>あんのホームページ</title>
+<link rel="icon" href="favicon.ico">
+
+<!----ページジャンプをなめらかにするやつ--->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    $('a[href^="#"]').click(function(){
+      var speed = 500;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+    });
+  });
+  </script>
+
+</head>
+
+<!-------------- ヘッダー---------------->
+
+<header>
+
+    <a type="button" href="top.html" class="header_button">あんのホームページ</a>
+    <a type="button" href="illustration.html" class="header_menu">イラスト</a>
+    <a type="button" href="DLC.html" class="header_menu">ダウンロード</a>
+    <a type="button" href="top.html" class="header_menu">booth</a>
+    <a type="button" href="top.html" class="header_menu">twitter</a>
+    <a type="button" href="top.html" class="header_menu">youtube</a>
+    <a type="button" href="https://scratch.mit.edu/users/aochance/" class="header_menu" target="_blank" rel="noopener">ゲーム</a>
+
+    <details class="header_other">
+        <summary class="header_other_title">その他</summary>
+        <a type="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfRL5fVIDP4LNTfdZgT5z5-S_PpIhW-tdQh31YvDKFhJh-I7Q/viewform" class="header_menu" target="_blank" rel="noopener">お問い合わせ</a>
+    </details>
+
+</header>
+
+<!-------------- ボディ----------------> 
+
+<body>
+
+<!-------------- タイトル---------------->
+
+<div class="title_design">
+<h1 class="titlelogo">Download</h1>
+</div>
+
+<!-------------- 詳細---------------->
+
+<div class="details">
+    <div class="subtitle">details</div>
+    <h3>ようこそ。あんが作った素材などがダウンロードできます。<br>利用規約に関しては、<a href="#terms of Use">こちら</a>からどうぞ。</h3>
+</div>
+
+<!-------------- DLC ---------------->
+
+<div class="DLC">
+    <div class="subtitle">Downloadable Content</div>
+    
+<div class="box"><a href="#test">
+    <img src="C:\Users\amansariyo\OneDrive\デスクトップ\home page\img\test.jpg">
+    <h3 class="box_text">テキストイメージ。テキストイメージ。</h4>
+</a></div>
+
+<div class="box"><a href="#">
+    <img src="https://dummyimage.com/200x200/ffffff/0011ff.png&text=no+image">
+    <h3 class="box_text">テキストイメージ。テキストイメージ。</h4>
+</a></div>
+
+<div class="box"><a href="#">
+    <img src="https://dummyimage.com/200x200/ffffff/0011ff.png&text=no+image">
+    <h3 class="box_text">テキストイメージ。テキストイメージ。</h4>
+</a></div>
+
+<div class="box"><a href="#">
+    <img src="https://dummyimage.com/200x200/ffffff/0011ff.png&text=no+image">
+    <h3 class="box_text">テキストイメージ。テキストイメージ。</h4>
+</a></div>
+
+<div class="box"><a href="#">
+    <img src="https://dummyimage.com/200x200/ffffff/0011ff.png&text=no+image">
+    <h3 class="box_text">テキストイメージ。テキストイメージ。</h4>
+</a></div>
+
+</div>
+
+<!-----------ダウンロード項目------------>
+
+<div class="Download Items">
+<div class="subtitle">Download items</div>
+
+<div class="download_menu" id="test">
+    <img src="C:\Users\amansariyo\OneDrive\デスクトップ\home page\img\test.jpg" class="download_image">
+    <button type="button" onclick="location='https://drive.google.com/drive/u/0/folders/1JXO7l9zM5oUXKKfSw_uMpoltcMteDYDu'" target="_blank"  rel="noopener noreferrer" class="download_button">サンプル</button>
+    <button type="button" class="download_button">pngでダウンロード</button>
+    <a href="test.jpg" download="test.jpg"><button type="button" class="download_button">jpgでダウンロード</button></a>
+    <br>
+    <h4 class="download_text">テキストイメージ。テキストイメージ。</h4>
+
+</div>
+
+</div>
+
+<!-------------- 利用規約---------------->
+
+<div class="TsermsOfUse" id="terms of Use">
+    <div class="subtitle">Terms of Use</div>
+    <h2>利用規約</h2>
+    <h3>【禁止事項】<br>
+        ・他人を不愉快にさせること。<br>
+        ・本コンテンツを全部、一部に関わらず、無断で再配布すること。<br>
+        ・公序良俗に反する行為<br>
+        <br>
+        【免責事項】<br>
+        ・本コンテンツの使用により、生じた損害には、製作者は一切の責任を負いません。<br>
+        <br>
+        【お問い合わせ】<br>
+        ・本コンテンツについて、疑問、お気づきの点がございましたら、<a href="https://docs.google.com/forms/d/e/1FAIpQLSfRL5fVIDP4LNTfdZgT5z5-S_PpIhW-tdQh31YvDKFhJh-I7Q/viewform" target="_blank" rel="noopener">こちら</a>から、お問い合わせください。</h3>
+        
+    </div>
+
+<div class="space"></div>
+
+</body>
+
+<!-------------- フッター---------------->
+
+<footer>
+
+    <a href="top.html" class="footer_button">トップ</a>
+    <a href="illustration.html" class="footer_button">イラスト</a>
+    <a href="DLC.html" class="footer_button">ダウンロード</a>
+    <a href="" class="footer_button">booth</a>
+    <a href="" class="footer_button">twitter</a>
+    <a href="" class="footer_button">youtube</a>
+    <a href="https://scratch.mit.edu/users/aochance/" class="footer_button" target="_blank" rel="noopener">ゲーム</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRL5fVIDP4LNTfdZgT5z5-S_PpIhW-tdQh31YvDKFhJh-I7Q/viewform" class="footer_button" target="_blank" rel="noopener">お問い合わせ</a>
+
+    <h3 class="footer_text">thank for watching!　あんのホームページ</h3>
+
+</footer>
+
+</html>
